@@ -120,7 +120,9 @@ img {
   text-align: end;
   right: 120px;
 }
-
+.content h1 {
+  margin-bottom: 8px;
+}
 .btns {
   margin-top: 16px;
 }
