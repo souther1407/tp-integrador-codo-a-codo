@@ -288,3 +288,49 @@ img {
   color: var(--white);
   width: 100px;
 }
+
+@media screen and (max-width: 900px) {
+  .cards {
+    flex-direction: column;
+  }
+  .form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .links {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    position: relative;
+    align-self: center;
+    z-index: 10;
+    text-align: center;
+    right: auto;
+    padding: 16px;
+  }
+  .speaker-card {
+    width: 100%;
+    margin: 0;
+  }
+  .place {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    padding: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer > * {
+    margin-bottom: 16px;
+  }
+}
