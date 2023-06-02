@@ -1,0 +1,54 @@
+.select-discount {
+  display: flex;
+  justify-content: center;
+}
+
+.discount-card {
+  border: 1px solid black;
+  padding: 16px;
+  width: 260px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+
+.discount-card.blue {
+  border: 1px solid blue;
+}
+.discount-card.green {
+  border: 1px solid rgb(90, 197, 161);
+}
+
+.discount-card.yellow {
+  border: 1px solid gold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.form > * {
+  margin-bottom: 8px;
+}
+.form .row * {
+  width: 50%;
+}
+.form .row *:first-child {
+  margin-right: 8px;
+}
+.sell-ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.total-payment {
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: var(--light-blue);
+  border: 1px solid var(--light-blue-dark);
+  color: var(--blue);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar tickets</title>
+    <link rel="stylesheet" href="../globals.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logoTitle">
+            <div class="logo">
+                <img src="../assets/codoacodo.png" alt="logo"/>
+            </div>
+            <p class="title">Conf Bs As</p>
+        </div>
+        <div class="links">
+            <a href="#banner" class="link active">La conferencia</a>
+            <a href="#speakers" class="link">Oradores</a>
+            <a href="#place" class="link">El lugar y la fecha</a>
+            <a href="#become-speaker" class="link">Conviertete en orador</a>
+            <a href="/comprar" class="link txt-green">Comprar ticket</a>
+        </div>
+        <!-- <button>
+            <span class="material-symbols-outlined txt-white">
+                menu
+            </span>
+        </button> -->
+    </nav>
+    <section class="select-discount">
+        <div class="discount-card blue">
+            <h2>Estudiante</h2>
+            <p>Tiene un descuento</p>
+            <p class="bold">80%</p>
+            <p>* Presentar documentación</p>
+        </div>
+        <div class="discount-card green">
+            <h2>Trainee</h2>
+            <p>Tiene un descuento</p>
+            <p class="bold">50%</p>
+            <p>* Presentar documentación</p>
+        </div>
+        <div class="discount-card yellow">
+            <h2>Junior</h2>
+            <p>Tiene un descuento</p>
+            <p class="bold">15%</p>
+            <p>* Presentar documentación</p>
+        </div>
+    </section>
+    <section class="sell-ticket">
+        <p>Venta</p>
+        <h1 class="mb">Valor del ticket $200</h1>
+        <form class="form" id="formulario">
+            <div class="row">
+                <input class="input" placeholder="Nombre"/>
+                <input class="input" placeholder="Apellido"/>
+            </div>
+            <input class="input" placeholder="Correo"/>
+            <div class="row">
+                <div class="column">
+                    <label>Cantidad</label>
+                    <input class="input" type="number" min="1" id="cantidad" />
+                </div>
+                <div class="column">
+                    <label>Categoria</label>
+                    <select name="categoria" id="categoria">
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="total-payment">
+                <p id="total">Total a pagar: $</p>
+            </div>
+            
+            <div class="row">
+                <button class="btn bg-green txt-white w-100" id="borrar">Borrar</button>
+                <button class="btn bg-green txt-white w-100" id="resumen">Resumen</button>
+            </div>
+        </form>
+    </section>
+    <script src="./scripts.js"></script>
+</body>
+</html>
